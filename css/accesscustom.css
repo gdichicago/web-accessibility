@@ -1,4 +1,4 @@
-@import 'accessibility-helper-plugin.css';
+@import 'accessibility-helper.css';
 
 .reveal section img.nonbordered{
 	border-width: 0;
@@ -10,21 +10,32 @@
 }
 
 p.credit{
-	font-size: 60%;
+  font-size: 60%;
 }
 
 .reveal section img {
-	max-height: 600px;
+	max-height: 550px;
 }
 
 .reveal h1 {
-	font-size: 2em;
+  font-size: 2em;
 }
 
 .reveal h2 {
-	font-size: 1.5em;
+  font-size: 1.5em;
 }
 
+.reveal h1, .reveal h2, .reveal h3 {
+    font-weight: 700;  
+}
+
+.reveal p, .reveal li, .reveal a {
+  font-weight: 600;
+}
+
+.reveal pre {
+  font-size: .7em;
+}
 
 
 /*
