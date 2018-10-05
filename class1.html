@@ -21,8 +21,8 @@
     <link rel="stylesheet" href="css/accesscustom.css">
 
     <!-- For syntax highlighting -->
-    <!-- light editor--><link rel="stylesheet" href="lib/css/light.css">
-    <!-- dark editor<link rel="stylesheet" href="lib/css/dark.css">-->
+    <!-- light editor<link rel="stylesheet" href="lib/css/light.css"> -->
+    <!--dark editor--><link rel="stylesheet" href="lib/css/dark.css">
     <!--<link rel="stylesheet" href="lib/css/zenburn.css">-->
 
     <link rel="stylesheet" href="plugin/accessibility-helper/css/accessibility-helper.css">
@@ -79,7 +79,7 @@
           <ul>
             <li>Who are you?</li>
             <li>What do you hope to get out of the class?</li>
-            <li>What is your favorite 80's song?</li>
+            <li>What is your guilty pleasure song?</li>
           </ul>
         </section>
 
@@ -97,7 +97,6 @@
             <li>Accessibility is about helping your users.</li>
           </ul>
         </section>
-
 
         <section>
           <h2>Why worry?</h2>
@@ -132,7 +131,7 @@
         </section>
 
         <section>
-          <h2>Accessibility is for everyone!</h2>
+          <h2>Accessibility is for everyone</h2>
           <img src="img/curbcut.jpg" alt="Curb cut on sidewalk" />
           <p class="credit">Photo credit: <a href="http://www.flickr.com/photos/firelizard5/8479806007/">Sylvia Pellicore</a> <a href="http://creativecommons.org/licenses/by/2.0/">cc<span class="visuallyhidden"> opens in a new window</span></a></p>
           <aside class="notes">
@@ -143,7 +142,7 @@
           <h2>Benefits of Accessibility</h2>
           <ul>
             <li>Curb cuts were designed for wheelchairs, but others use them. Similarly, accessibility features end up helping everyone.</li>
-            <li>Many times, good design practices create accessibility as a side effect.</li>
+            <li>Some design best practices are accessibility best practices.</li>
             <li>Accessibility features, like good alt text, can improve your search engine placement.</li>
           </ul>
         </section>
@@ -168,12 +167,13 @@
 
         <!-- How To-->
         <section>
-          <h2>Accessibility is a continuum, not a checkbox</h2>
+          <h2>Accessibility is a process, not a checkbox</h2>
           <img src="img/checkmark.jpg" alt="Checkmark with word 'chk' on blackboard"/>
           <p class="credit">Photo credit: <a href="http://www.flickr.com/photos/mattcarman/1573507091/" target ="_blank">Matt Carman<span class="visuallyhidden"> opens in a new window</span></a> <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/" target ="_blank">cc<span class="visuallyhidden"> opens in a new window</span></a></p>
           <aside class="notes">
             <p>Accessibility checkers can help, but they are not a full subsititute for manual testing.</p>
             <p>You don't have to be perfect to be helping. No site will be perfectly accessible for everyone in the world.</p>
+            <p>Testing and iterating, will help us achieve more usable products .</p>
           </aside>
         </section>
 
@@ -205,15 +205,6 @@
             <p>Choose a site with a complex nav menu, and show how long it takes to get through with a screen reader. I used CNN.com and NVDA for this demo, but any common screen reader will work.</p>
           </aside>
         </section>
-        <section>
-          <h2>Let's try it</h2>
-          <p><a href="http://webaim.org/simulations/screenreader-sim.htm" target ="_blank">Screen reader simulation<span class="visuallyhidden"> opens in a new window</span></a></p>
-          <p>http://bit.ly/p3JmJ2</p>
-          <aside class="notes">
-            <p>Have students try the screenreader demo at http://webaim.org/simulations/screenreader-sim.htm. (With headphones!) You may have to help people install the Shockwave  plugin. Time limit to ten minutes, and cut it short if students seem bored or frustrated.</p>
-            <p>If available, demo VoiceOver on the iPhone/iPad or Talkback on Android.</p>
-          </aside>
-        </section>
 
         <!-- Alternate text -->
         <section>
@@ -221,6 +212,10 @@
           <img src="img/anotherpath.jpg" alt="Signs pointing to handicap-accessible routes" />
           <p class="credit">Photo credit: <a href="http://www.flickr.com/photos/lng0004/7093675431/" target ="_blank">Linh H. Nguyen<span class="visuallyhidden"> opens in a new window</span></a> <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/" target ="_blank">cc<span class="visuallyhidden"> opens in a new window</span></a></p>
         </section>
+        <aside class="notes">
+            <p>It's important to provide more than one format for information.</p>
+            <p>You could provide another path for an experience, but it is nicer not to "other" users with different needs.</p>
+        </aside>
         <section>
           <h2>Alt text</h2>
           <ul>
@@ -248,17 +243,21 @@
         <section>
           <h2>Other tips for screen readers</h2>
           <ul>
-            <li class="fragment">Headings skip-nav links and landmark roles give users a way to navigate through a page.</li>
             <li class="fragment">Content is more than just visual.</li>
-            <li class="fragment">External link indicators prevent unexpected page changes.</li>
-            <li class="fragment">Tables can be hard to navigate, so only use them for tabular data.</li>
-            <li class="fragment">Many users are switching to touch-screen based readers like <a href="http://www.apple.com/accessibility/iphone/vision.html" target="_blank" title="Link opens in a new window">VoiceOver on iOS<span class="visuallyhidden"> opens in a new window</span></a>.</li>
+            <li class="fragment">Headings skip-nav links and landmark roles can users navigate a page.</li>
+            <li class="fragment">External link indicators help prevent unexpected page changes.</li>
+            <li class="fragment">Tables can be hard to navigate, so use them for tabular data, not for layout.</li>
+            <li class="fragment">Many users are using mobile screen readers such as <a href="http://www.apple.com/accessibility/iphone/vision.html" target="_blank" title="Link opens in a new window">VoiceOver on iOS<span class="visuallyhidden"> opens in a new window</span></a>.</li>
           </ul>
+        </section>
+        <section>
+          <h2>Example of skip navigation</h2>
+          <img src="img/fb_skip_nav.png" alt="screenshot of Facebook skip to main content options"/>
         </section>
 
         <!-- Other visual disabilities-->
         <section>
-          <h2>Provide contrast</h2>
+          <h2>Provide color contrast</h2>
           <img src="img/contrast.jpg" alt="Crosswalk with contrasting colors"/>
           <p class="credit">Photo credit: <a href="http://www.flickr.com/photos/antifluor/2074560932/" target="_blank" title="Link opens in a new window">antifluor<span class="visuallyhidden"> opens in a new window</span></a> <a href="http://creativecommons.org/licenses/by/2.0/" target="_blank" title="Link opens in a new window">cc<span class="visuallyhidden"> opens in a new window</span></a></p>
         </section>
@@ -266,11 +265,20 @@
           <h2>More on visual disabilities</h2>
           <ul>
             <li class="fragment">If you use color to indicate something, also use another indicator. For example, underline links on hover or mark a required field with an asterisk.</li>
-            <li class="fragment">Red/green color blindness is the most common, so avoid green on red.</li>
+            <li class="fragment">Red/green color blindness is the most common, so avoid green next to red.</li>
             <li class="fragment">Include color names in product descriptions and show examples (<a href="http://24ways.org/2012/colour-accessibility/" target="_blank" title="Link opens in a new window">article<span class="visuallyhidden"> opens in a new window</span></a>)</li>
             <li class="fragment">Have a <em>minimum</em> of contrast ratio of 4.5:1 for normal text and 3:1 for large text. (<a href="http://webaim.org/resources/contrastchecker/" target="_blank" title="Link opens in a new window">Checker<span class="visuallyhidden"> opens in a new window</span></a>)</li>
             <li class="fragment">Try zooming in on your designs, to see how they look when enlarged. It is a good idea to use ems and percentages instead of pixels when you can.</li>
           </ul>
+        </section>
+
+        <section>
+          <h2>Color Contrast Checkers</h2>
+          <p>Let's see if our slides are accessible</p>
+          <p>
+            Heading font color (pink): #FF5E99
+            Text font color (gray): #53555C
+          </p>
         </section>
 
         <!-- Hearing disabilities-->
@@ -293,7 +301,7 @@
             <li class="fragment">Most deaf or hard-of-hearing people have limited difficulty with web accessibility.</li>
             <li class="fragment">Provide captions or transcripts for multimedia elements.</li>
             <li class="fragment">Don't rely on sounds to convey information, like an "alert" noise. Even hearing users often have their computers muted.</li>
-            <li class="fragment">Be especially careful if your site targets older users, as hearing loss is common.</li>
+            <li class="fragment"><a href="https://digiday.com/media/silent-world-facebook-video/" target="_blank" title="Link opens in a new window">Article about how 85% of Facebook video is watched without sound<span class="visuallyhidden"> opens in a new window</span></a></p></li>
           </ul>
           <aside class="notes">
             <p>Paid captioning services are relatively inexpensive, about $1.50 to $2.50 a minute.</p>
@@ -316,12 +324,12 @@
         <section>
           <h3>Physical Disabilities</h3>
           <ul>
-            <li class="fragment">Many users with limited mobility interact with the screen via keyboard.</li>
-            <li class="fragment">Other users use a mouse, but have trouble with fine motor control.</li>
+            <li class="fragment">Using a mouse typically requires fine motor skills.</li>
+            <li class="fragment">Many users with limited mobility have difficulty using a mouse, so they might interact with the screen using the keyboard.</li>
             <li class="fragment">Make clickable elements large, and put space between them.</li>
             <li class="fragment">Avoid clickable page elements that move.</li>
             <li class="fragment">Animations with rapid flickers are not only annoying, they can trigger epileptic seizures.</li>
-            <li class="fragment">These guidelines also help children and touchscreen users!</li>
+            <li class="fragment">These guidelines also help children and touchscreen users.</li>
           </ul>
         </section>
 

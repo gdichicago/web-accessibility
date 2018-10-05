@@ -20,3 +20,6 @@ You should have:
  - A modern web browser - either Chrome or Firefox.
  - A text editor. We recommend Sublime Text 2 (free; available for Mac, PC, and Linux).
  - A set of headphones or earbuds
+
+To run the slides locally:
+`npm start`
