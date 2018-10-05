@@ -1,5 +1,5 @@
 # Introduction to Web Accessibility
-Slides and materials are hosted at [https://margiechubin.github.io/web-accessibility/class1.html#/](https://margiechubin.github.io/web-accessibility/class1.html#/).
+Slides and materials are hosted at [https://margiechubin.github.io/web-accessibility/](https://margiechubin.github.io/web-accessibility/).
 
 This is the official Girl Develop It Web Accessibility curriculum. This is a four-hour course, divided into two two-hour sessions. It was originally developed by Sylvia Pellicore, with additional content from Aisha Blake. An update by Marcy Sutton converted it to a two-week class. There are four components: the course slides (class1.html and class2.html), a class activity handout (kitten-alt-text.pdf), an HTML/CSS demo with two parts (demo.html and demo.css), and an instructor guide (Instructor Guide.docx).
 
@@ -18,11 +18,11 @@ You should have:
  - A modern web browser - either Chrome or Firefox.
  - A set of headphones or earbuds
 
-To run the slides locally:
+### To run the slides locally:
 fork the repository for yourself
-`npm install`
-`npm start`
+- `npm install`
+- `npm start`
 
-To host the slides yourself:
-Create a gh-pages branch with your changes
-Find your hosted slides at <your-username>.github.io/web-accessibility
+### To host the slides yourself:
+- Create a gh-pages branch with your changes
+- Find your hosted slides at <your-username>.github.io/web-accessibility
