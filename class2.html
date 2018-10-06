@@ -8,7 +8,7 @@
 
     <meta name="description" content="This is the Girl Develop It Web Accessibility curriculum. It was originally developed by Sylvia Pellicore and modified by Marcy Sutton.
 
-    This course is meant to be taught as a two-week class. The primary slides are designed for maximum presentability--one picture, one sentence. The vertical slides contain speaker notes, to make the slides more useful as a shared resource.
+    This course is meant to be taught as a two-part class. The primary slides are designed for maximum presentability--one picture, one sentence. The vertical slides contain speaker notes, to make the slides more useful as a shared resource.
 
     Each of the slides is customizable according to the needs of a given class or audience.  The GitHub repository contains an Instructor Guide, with further information about the course.">
     <meta name="author" content="Girl Develop It">
@@ -54,151 +54,162 @@
       <div class="slides">
         <!-- Opening slides -->
         <section>
-					<img src="img/circle-gdi-logo.png" alt="Girl Develop It" style="max-height: 400px;" class="nonbordered">
-					<h1>Intro to Web Accessibility</h1>
-					<h2>Class 2</h2>
-				</section>
+			<img src="img/circle-gdi-logo.png" alt="Girl Develop It" style="max-height: 400px;" class="nonbordered">
+			<h1>Intro to Web Accessibility</h1>
+			<h2>Class 2</h2>
+		</section>
 
-				<!-- Welcome-->
-				<section>
-					<h2>Welcome!</h2>
-					<p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
-					<p class ="green">Some "rules"</p>
-					<ul>
-						<li>We are here for you!</li>
-						<li>Every question is important</li>
-						<li>Help each other</li>
-						<li>Have fun</li>
-					</ul>
-				</section>
+		<!-- Welcome-->
+		<section>
+			<h2>Welcome!</h2>
+			<p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
+			<p class ="green">Some "rules"</p>
+			<ul>
+				<li>We are here for you!</li>
+				<li>Every question is important</li>
+				<li>Help each other</li>
+				<li>Have fun</li>
+			</ul>
+		</section>
 
-				<!-- Intro: What is Accessibility?-->
-				<section>
-					<h2>What is accessibility?</h2>
-					<ul>
-						<li>Accessibility is about making your sites useful to as many people as possible.</li>
-						<li>Accessibility is about overcoming barriers.</li>
-						<li>Accessibility is about helping your users.</li>
-					</ul>
-         		 <aside class="notes">Just a quick review</aside>
-				</section>
+		<!-- Intro: What is Accessibility?-->
+		<section>
+			<h2>What is accessibility?</h2>
+			<ul>
+				<li>Accessibility is about making your sites useful to as many people as possible.</li>
+				<li>Accessibility is about overcoming barriers.</li>
+				<li>Accessibility is about helping your users.</li>
+			</ul>
+		</section>
 
-				<section>
-					<h2>Accessibility in the Real World</h2>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/g6wZlTcwGks?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
-					<aside class="notes">
-						This video introduces many concepts we are talking about today with poor implementation of features on the web with some bad humor. Watch first 4ish minutes.
-					</aside>
-				</section>
+		<section>
+			<h2>Accessibility in the Real World</h2>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/g6wZlTcwGks?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+			<aside class="notes">
+				This video introduces many concepts we are talking about today with poor implementation of features on the web with some bad humor. Watch first 4ish minutes.
+			</aside>
+		</section>
 		
 
-				<section>
-					<h2>What are the common problems users face on the web?</h2>
-					<h3>Screen reader user survey</h3>
-					<img src="img/screen_reader_problems_2017.png" alt=""/>
-					<div id="problem-items" class="visuallyhidden">
-					<p>The most problematic items according to the WebAIM survey in 2017 are:</p>
-					<ol>
-						<li>CAPTCHA - images presenting text used to verify that you are a human user.</li>
-						<li>Screens or parts of screens that change unexpectedly.</li>
-						<li>Links or buttons that do not make sense.</li>
-						<li>Images with missing or improper descriptions (alt text).</li>
-						<li>The presence of inaccessible Flash content.</li>
-						<li>Lack of keyboard accessibility.</li>
-						<li>Complex or difficult forms.</li>
-						<li>Missing or improper headings.</li>
-						<li>Too many links or navigation items.</li>
-						<li>Complex data tables.</li>
-						<li>Inaccessible or missing search functionality.</li>
-						<li>Lack of "skip to main content" or "skip navigation" links.</li>
-					</ol>
-					</div>
-					<p>Source: <a href="https://webaim.org/projects/screenreadersurvey7/" target="_blank" title="Link opens in a new window">WebAIM Screen Reader Survey, October 2017<span class="visuallyhidden"> opens in a new window</span></a></p>
-					<aside class="notes">Introduce the WebAIM Screen Reader survey and show the common problems. Marcy's version of the <a href="http://marcysutton.com/stuff/GDI-Accessibility/img/webaim-survey-problematic-items.png">infographic</a> highlights topics covered in the two classes. This can be helpful to keep open in a second browser tab so it can be referenced more than once.
-					</aside>
-				</section>
+		<section>
+			<h2>What are the common problems users face on the web?</h2>
+			<p>Screen reader user survey</p>
+			<img src="img/screen_reader_problems_2017.png" alt="bar chart showing most problematic issues screen reader users face on the web."/>
+			<div id="problem-items" class="visuallyhidden">
+			<p>The most problematic items according to the WebAIM survey in 2017 are:</p>
+			<ol>
+				<li>CAPTCHA - images presenting text used to verify that you are a human user.</li>
+				<li>Screens or parts of screens that change unexpectedly.</li>
+				<li>Links or buttons that do not make sense.</li>
+				<li>Images with missing or improper descriptions (alt text).</li>
+				<li>The presence of inaccessible Flash content.</li>
+				<li>Lack of keyboard accessibility.</li>
+				<li>Complex or difficult forms.</li>
+				<li>Missing or improper headings.</li>
+				<li>Too many links or navigation items.</li>
+				<li>Complex data tables.</li>
+				<li>Inaccessible or missing search functionality.</li>
+				<li>Lack of "skip to main content" or "skip navigation" links.</li>
+			</ol>
+			</div>
+			<p>Source: <a href="https://webaim.org/projects/screenreadersurvey7/" target="_blank" title="Link opens in a new window">WebAIM Screen Reader Survey, October 2017<span class="visuallyhidden"> opens in a new window</span></a></p>
+			<aside class="notes">Introduce the WebAIM Screen Reader survey and show the common problems. Marcy's version of the <a href="http://marcysutton.com/stuff/GDI-Accessibility/img/webaim-survey-problematic-items.png">infographic</a> highlights topics covered in the two classes. This can be helpful to keep open in a second browser tab so it can be referenced more than once.
+			</aside>
+		</section>
 
-				<section>
-					<h2>How do I code for accessibility?</h2>
-					<h3>HTML</h3>
-					<ul style="padding-right: 30%;">
-						<li>Headings</li>
-						<li>Buttons</li>
-						<li>Form Labels</li>
-						<li>Text Alternatives</li>
-						<li>Tab Index</li>
-						<li>External link indicators</li>
-					</ul>
-					<img src="img/wallace-gromit.jpg" alt="Wallace &amp; Gromit" style="position: absolute; right: 0;" />
-					<aside class="notes">
-						<p>Define semantic - elements that have meaning</p>
-					</aside>
-				</section>
+		<section>
+			<h2>How do I code for accessibility?</h2>
+			<h3>HTML</h3>
+			<ul style="padding-right: 30%;">
+				<li>Headings</li>
+				<li>Buttons</li>
+				<li>Form Labels</li>
+				<li>Text Alternatives</li>
+				<li>Tab Index</li>
+				<li>External link indicators</li>
+			</ul>
+			<img src="img/wallace-gromit.jpg" alt="Wallace &amp; Gromit" style="position: absolute; right: 0;" />
+			<aside class="notes">
+				<p>Define semantic - elements that have meaning</p>
+			</aside>
+		</section>
 			
 
-				<section>
-					<h2>Semantic HTML</h2>
-					<ul>
-						<li>Use HTML elements that have meaning.</li>
-						<li>Elements have default behavior.</li>
-						<li>Semantic structure is one of the most important usability features for screen reader users, as it helps them more easily understand and navigate the page structure.</li>
-					</ul>
-					<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank" title="Link opens in a new window">MDN Document on HTML elements<span class="visuallyhidden"> opens in a new window</span></a>.</p>
-				</section>
+		<section>
+			<h2>Semantic HTML</h2>
+			<ul>
+				<li class="fragment">Use HTML elements that have meaning.</li>
+				<li class="fragment">Elements have default behavior.</li>
+				<li class="fragment">Semantic structure is one of the most important usability features for screen reader users, as it helps them more easily understand and navigate the page structure.</li>
+			</ul>
+			<p style="margin-top:1em"><a class="fragment" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank" title="Link opens in a new window">MDN Document on HTML elements<span class="visuallyhidden"> opens in a new window</span></a></p>
+		</section>
 
-				<section>
-					<h2>HTML Headings</h2>
-					<ul>
-						<li>Headings also help <em>all</em> your users understand the content.</li>
-						<li>We can think about headings like an outline for a paper.</li>
-					</ul>
-				<pre>
-					<code class="html">// Headings should not skip levels
-						&lt;h1&gt;Most important&lt;/h1&gt;
-						&lt;h2&gt;Next most important&lt;/h2&gt;
-						&lt;h3&gt;Third most important&lt;/h3&gt;
-						&lt;h4&gt;Other heading&lt;/h4&gt;
-					</code>
-				</pre>		
-				<a href="http://accessiblehtmlheadings.com/" target="_blank" title="Link opens in a new window">Read more about headings<span class="visuallyhidden"> opens in a new window</span></a>
-				</section>
+		<section>
+			<h2>HTML Headings</h2>
+			<ul>
+				<li class="fragment">Headings also help <em>all</em> your users understand the content.</li>
+				<li class="fragment">We can think about headings like an outline for a paper.</li>
+				<li class="fragment">Headings should not skip levels</li>
+			</ul>
+		<pre class="fragment"><code>&lt;h1&gt;Most important&lt;/h1&gt;
+&lt;h2&gt;Next most important&lt;/h2&gt;
+&lt;h3&gt;Third most important&lt;/h3&gt;
+&lt;h4&gt;Other heading&lt;/h4&gt;</code></pre>		
+		<p class="fragment"><a href="http://accessiblehtmlheadings.com/" target="_blank" title="Link opens in a new window">Read more about headings<span class="visuallyhidden"> opens in a new window</span></a></p>
+		</section>
 
-				<section>
-					<h2>HTML Buttons</h2>
-					<p>Clickable elements</p>
-					<pre><code>&lt;button onclick="do something"&gt;Do Something&lt;/button&gt;</code></pre>
-					<button style="font-size: 30px; height: 60px; margin-bottom: 10px; border: 2px solid #53555C;">Do Something</button>
-					<br>
-					<a href="http://www.karlgroves.com/2013/05/14/links-are-not-buttons-neither-are-divs-and-spans/" target="_blank" title="Link opens in a new window">Links are not buttons. Neither are divs and spans.<span class="visuallyhidden"> opens in a new window</span></a>
-					<aside class="notes">
-							button demo http://bit.ly/button-demo
-					</aside>
-				</section>
+		<section>
+			<h2>HTML Buttons</h2>
+			<p>Clickable elements</p>
+			<pre><code>&lt;button onclick="do something"&gt;Do Something&lt;/button&gt;</code></pre>
+			<button style="font-size: 30px; height: 60px; margin-bottom: 10px; border: 2px solid #53555C;">Do Something</button>
+			<br>
+			<p style="margin-top:1em"><a href="http://www.karlgroves.com/2013/05/14/links-are-not-buttons-neither-are-divs-and-spans/" target="_blank" title="Link opens in a new window">Links are not buttons. Neither are divs and spans.<span class="visuallyhidden"> opens in a new window</span></a></p>
+			<p style="margin-top:1em"><a href="https://marcysutton.com/links-vs-buttons-in-modern-web-applications/" target="_blank" title="Link opens in a new window">Links vs. Buttons<span class="visuallyhidden"> opens in a new window</span></a></p>
+		</section>
+
+		<section>
+			<h2>Let's Develop It</h2>
+			<p>What is and isn't a button?</p>
+			<p>Take a look at the <a href="https://codepen.io/margiechubin/pen/XxJxOv" target="_blank" title="Link opens in a new window">button demo codepen<span class="visuallyhidden"> opens in a new window</span></a></p>
+			<aside class="notes">
+				Buttons are often coded poorly on the web by adding click events to other elements where a button would have worked best. The codepen linked shows 4 examples of how a button could be coded but only the 4th button is an actual button.
+			</aside>
+		</section>
 			
-				<section>
-					<h2>Form Labels</h2>
-					<h3>How do they work?</h3>
-					<!-- explanation here -->
-					<div class="code-example">
-						<label for="name-field">Name</label>
-						<input type="text" id="name-field" name="name-field" placeholder="Type your furry friend's name" />
-						<div class="float">
-							<label for="species-dog">Dog</label>
-							<input type="radio" id="species-dog" name="species" />
-						</div>
-						<div class="float">
-							<label for="species-cat">Cat</label>
-							<input type="radio" id="species-cat" name="species" />
-						</div>
-						<div class="clear"></div>
-					</div>
+		<section>
+			<h2>Form Labels</h2>
+			<p>How do they work?</p>
+			<div class="code-example">
+				<label for="name-field">Name</label>
+				<input type="text" id="name-field" name="name-field" placeholder="Type your furry friend's name" />
+				<div class="float">
+					<label for="species-dog">Dog</label>
+					<input type="radio" id="species-dog" name="species" />
+				</div>
+				<div class="float">
+					<label for="species-cat">Cat</label>
+					<input type="radio" id="species-cat" name="species" />
+				</div>
+				<div class="clear"></div>
+			</div>
+		</section>
+
+		<section>
+			<h2>Let's develop it</h2>
+			<h3>Add labels to an HTML form</h3>
+			<div class="fragment">
+				<p>Explicit association - label for</p>
 <pre>
 <code class="html" data-trim>
 &lt;label for="name-field"&gt;Label&lt;/label&gt;
 &lt;input type="text" id="name-field" name="name-field"&gt;
 </code>
 </pre>
-You can also implicitly associate the label with the input field.
+			</div>		
+			<div class="fragment">
+				<p>You can also implicitly associate the label with the input field.</p>
 <pre>
 <code class="html" data-trim>
 &lt;label&gt;Label
@@ -206,68 +217,91 @@ You can also implicitly associate the label with the input field.
 &lt;/label&gt;
 </code>
 </pre>
-				</section>
+			</div>
+			<p class="fragment">Add a label to the form in <a href="https://codepen.io/margiechubin/pen/KGgNgj" target="_blank" title="Link opens in a new window">input field demo codepen<span class="visuallyhidden"> opens in a new window</span></a>.</p>
+		</section>
 
-				<section>
-					<h2>Let's develop it</h2>
-					<h3>Add labels to an HTML form</h3>
-				</section>
+		<section>
+			<h2>Other tips for forms</h2>
+			<ul>
+				<li>Don't use placeholder text as the label.</li>
+				<li>Provide good instructions, labels, validation, and errors.</li>
+				<li>The form should be keyboard accessible.</li>
+				<li>Allow the user to easily correct their mistakes.</li>
+			</ul>
+			<p style="margin-top:1em"><a href="https://webaim.org/techniques/forms/" target="_blank" title="Link opens in a new window">Creating Accessible Forms<span class="visuallyhidden"> opens in a new window</span></a></p>
+		</section>
 
-				<section>
-					<h2>External Links</h2>
-					<h3>Provide affordances to warn users of unexpected screen changes</h3>
-					<img src="img/links-WCAG.png" alt="WCAG 2.0 Link requirements" class="nonbordered" />
-					<img src="img/how-i-audit-a-website-external-link.png" alt="How I Audit a Website for Accessibility external link indicator" class="nonbordered" />
-				</section>
+		<section>
+			<h2>External Links</h2>
+			<p>Provide affordances to warn users of unexpected screen changes</p>
+			<img src="img/links-WCAG.png" alt="WCAG 2.0 Link requirements" class="nonbordered" />
+			<img src="img/how-i-audit-a-website-external-link.png" alt="How I Audit a Website for Accessibility external link indicator" class="nonbordered" />
+		</section>
 
-				<section>
-					<h2>External Links</h2>
-					<p>Here's one way of letting users know a link opens in a new tab</p>
-<pre><code class="html" data-trim>
+		<section>
+			<h2>External Links</h2>
+			<h3>Let's Develop It</h3>
+			<p>Here's one way of letting users know a link opens in a new tab.</p>
+<pre class="fragment"><code class="html" data-trim>
 &lt;a href="goofy.html"&gt;Goofy page&lt;a&gt;
 
 &lt;a href="http://disney.com" target="_blank"
-title="Link opens in a new window"
-class="external-link"&gt;
-Disney.com
-&lt;span class="offscreen"&gt;
-opens in a new window
-&lt;span&gt;
+	title="Link opens in a new window"
+	class="external-link"&gt;
+	Disney.com
+	&lt;span class="offscreen"&gt;
+		opens in a new window
+	&lt;/span&gt;
 &lt;/a&gt;
 </code></pre>
-          		<aside class="notes">A common problem cited in the WebAIM survey is “unexpected screen changes”. Discuss how to warn users of links that open in new windows with offscreen text and title attributes. Include a discussion about how it's really about usability in general. Recommended reading: “Don't Make Me Think” by Steve Krug</aside>
-				</section>
+			<aside class="notes">A common problem cited in the WebAIM survey is “unexpected screen changes”. Discuss how to warn users of links that open in new windows with offscreen text and title attributes. Include a discussion about how it's really about usability in general. Recommended reading: “Don't Make Me Think” by Steve Krug</aside>
+		</section>
 
-				<section>
-					<h2>Tab Index</h2>
-					<p>The tabindex attribute explicitly defines the tab order for focusable elements (typically links and form controls) within a page. It can be used to define whether elements should be focusable. (<a href="http://webaim.org/techniques/keyboard/tabindex" target="_blank" title="Link opens in a new window">WebAIM<span class="visuallyhidden"> opens in a new window</span></a>)</p>
-					<div style="padding-top:20px;">
-						<h3 tabindex="0">Focusable Heading by tabindex 0</h3>
-						<a href="#" tabindex="-1">tabindex -1 causes this to only be focusable by script</a>
-						<a href="#">Actual Link with no changed tabindex</a>
-						<div tabindex="0">This is a focusable div with tabindex 0</div>
-						<div tabindex="2">Tabindex values greater than 0 could require managing the tab order for the whole page</div>
-					</div>
-					<aside class="notes">
-						<p>Source: http://reference.sitepoint.com/html/a/tabindex</p>
-						<p>Explain tab order. Show a demo of tabIndex=”” attributes on native and non-native elements to show how it affects the flow of a document (anchor, input, div, heading, etc.). Explain tab index values of -1, 0 and 1+ their specific purposes</p>
-					</aside>
-				</section>
+		<section>
+			<h2>Tab Index</h2>
+			<ul>
+				<li>The tabindex attribute explicitly defines the tab order for focusable elements (typically links and form controls) within a page.</li>
+				<li>It can be used to define whether elements should be focusable.</li>
+				<li>Don't use tab index values greater than 0</li>
+				<li><a href="http://webaim.org/techniques/keyboard/tabindex" target="_blank" title="Link opens in a new window">Read more about tabindex on WebAIM<span class="visuallyhidden"> opens in a new window</span></a></li>
+			</ul>
+			<aside class="notes">
+				<p>Source: http://reference.sitepoint.com/html/a/tabindex</p>
+				<p>Explain tab order. Show a demo of tabIndex=”” attributes on native and non-native elements to show how it affects the flow of a document (anchor, input, div, heading, etc.). Explain tab index values of -1, 0 and 1+ their specific purposes</p>
+			</aside>
+		</section>
 
-				<section>
-					<h2>How do I code for accessibility?</h2>
-					<h3>CSS</h3>
-					<p>CSS can used to alter visual appearance, but never the structure or ordering of the page content.</p>
-					<ul>
-						<li>Visually Hidden Content</li>
-						<li>Really Hidden</li>
-						<li>Background Images</li>
-					</ul>
-				</section>
+		<section>
+			<h2>Tab Index</h2>
+			<h2>Let's Develop It</h2>
+			<p>Explore tab index on native (buttons, links, ect.) and non-native elements.</p>
+			<p>Play with tab index in the <a href="https://codepen.io/margiechubin/pen/YJGpra" target="_blank" title="Link opens in a new window">tab index demo codepen<span class="visuallyhidden"> opens in a new window</span></a> or try tabbing through this slide</p>
+			<div style="margin-top:1em; padding:10px; border: 2px solid #53555C">
+				<a href="#">Actual Link with no changed tabindex</a><br>
+				<a href="#" tabindex="-1">tabindex -1 causes this to  be focusable only by script</a>
+				<div tabindex="0">This is a focusable div with tabindex 0</div>
+				<div tabindex="2">Tabindex values greater than 0 could require managing the tab order for the whole page</div>
+			</div>
+			<aside class="notes">
+				<p>Explain how tabindex -1 causes the element to only be focusable by script. It takes it out of the tab order entirely. This is useful for focusing on form errors.</p>
+			</aside>
+		</section>
 
-				<section>
-					<h2>Visually Hidden Content</h2>
-					<p>This is one way to provide data for screen reader users and hide for sighted users</p>
+		<section>
+			<h2>How do I code for accessibility?</h2>
+			<h3>CSS</h3>
+			<p>CSS can be used to alter visual appearance, but should never change the structure or ordering of the page content.</p>
+			<ul>
+				<li>Visually Hidden Content</li>
+				<li>Really Hidden</li>
+				<li>Background Images</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Visually Hidden Content</h2>
+			<p>This is one way to provide data for screen reader users and hide for sighted users</p>
 <pre><code class="css" data-trim>/*Copied from HTML5 Boilerplate*/
 
 .visuallyhidden {
@@ -281,12 +315,12 @@ opens in a new window
 	width: 1px;
 }
 </code></pre>
-					<p><a href="http://snook.ca/archives/html_and_css/hiding-content-for-accessibility">Hiding Content for Accessibility</a></p>
-				</section>
+			<p style="margin-top:1em;"><a href="http://snook.ca/archives/html_and_css/hiding-content-for-accessibility" target="_blank" title="Link opens in a new window">Hiding Content for Accessibility<span class="visuallyhidden"> opens in a new window</span></a></p>
+		</section>
 
-				<section>
-					<h2>Really Hidden</h2>
-					<h3>How to show and hide content from all users</h3>
+		<section>
+			<h2>Really Hidden</h2>
+			<p>How to show and hide content from <em>all</em> users</p>
 <pre><code class="css" data-trim>.reallyHidden {
 	display: none;
 	visibility: hidden;
@@ -296,74 +330,103 @@ opens in a new window
 	visibility: visible;
 }
 </code></pre>
-				</section>
+			<p style="margin-top:1em;"><a href="https://css-tricks.com/places-its-tempting-to-use-display-none-but-dont/" target="_blank" title="Link opens in a new window">Places it's tempting to use `display:none`, but don't<span class="visuallyhidden"> opens in a new window</span></a></p>
+		</section>
 
-				<section>
-					<h2>Background Images</h2>
-					<ul>
-						<li>Only use decorative images</li>
-						<li>No alternative text available</li>
-						<li>Don't forget to consider contrast of text on top of images</li>
-					</ul>
-				</section>
+		<section>
+			<h2>Background Images</h2>
+			<ul>
+				<li>Only use decorative images as background images</li>
+				<li>No alternative text is available</li>
+				<li>Don't forget to consider contrast of text on top of images</li>
+			</ul>
+			<p>Example code</p>
+			<pre><code class="css" data-trim>
+#animalImage {
+	background-image: url('animal-drums-copia.jpg');
+	background-repeat: no-repeat;
+}
+			</code></pre>
+		</section>
 
-				<section>
-					<h2>What else can we do with CSS?</h2>
-					<ul>
-						<li>Implement good color contrast</li>
-						<li>Use padding and margins for space instead of using extra markup</li>
-						<li>Style focus states for links and buttons</li>
-					</ul>
-				</section>
+		<section>
+			<h2>What else can we do with CSS?</h2>
+			<ul>
+				<li class="fragment">Implement good color contrast</li>
+				<li class="fragment">Use padding and margins for space instead of using extra markup</li>
+				<li class="fragment">Style focus states for links and buttons</li>
+			</ul>
+			<pre class="fragment"><code class="css" data-trim>
+a {
+	color: #01a9b4;
+}
+a:hover, a:focus {
+	color: #f3787e;
+}
+			</code></pre>
+		</section>
 
-				<section>
-					<h2>How do I code for accessibility?</h2>
-					<h3>Accessible Rich <br>Internet Applications</h3>
-					<ul>
-						<li>Expands HTML's native vocabulary.</li>
-						<li>Used mainly to define behavior of custom widgets.</li>
-						<li>Communicates state and purpose to assistive technologies.</li>
-						<li>ARIA gives more information to screen readers but doesn't tell browsers or assistive technologies what to do with it.</li>
-					</ul>
-					<p style="margin-top:1em;"><a href="https://www.marcozehe.de/2014/03/27/what-is-wai-aria-what-does-it-do-for-me-and-what-not/" target="_blank">What is WAI-ARIA, what does it do for me, and what not?<span class="visuallyhidden"> opens in a new window</span></a></p>
-				</section>
-				<section>
-					<h2>No ARIA is better than bad ARIA</h2>
-					<p>Taken directly from the <a href="https://www.w3.org/TR/wai-aria-practices-1.1/" target="_blank">ARIA Authoring Practices<span class="visuallyhidden"> opens in a new window</span></a></p>
-				</section>
+		<section>
+			<h2>How do I code for accessibility?</h2>
+			<h3>Accessible Rich <br>Internet Applications</h3>
+			<ul>
+				<li class="fragment">Expands HTML's functionality.</li>
+				<li class="fragment">Define behavior of custom widgets.</li>
+				<li class="fragment">Communicates state and purpose to assistive technologies.</li>
+				<li class="fragment">ARIA gives information to screen readers, but doesn't tell browsers or assistive technologies what to do with it.</li>
+			</ul>
+			<p style="margin-top:1em;" class="fragment"><a href="https://www.marcozehe.de/2014/03/27/what-is-wai-aria-what-does-it-do-for-me-and-what-not/" target="_blank">What is WAI-ARIA, what does it do for me, and what not?<span class="visuallyhidden"> opens in a new window</span></a></p>
+			<aside class="notes"></aside>
+		</section>
 
-				<section>
-					<h2>ARIA Core Components</h2>
-					<div class="inset-width">
-						<div class="definition">
-							<h4 style="margin-top: 0.75em">Roles</h4>
-							<p>What does this thing do?</p>
+		<section>
+			<h2>"No ARIA is better than bad ARIA"</h2>
+			<p>Taken directly from the <a href="https://www.w3.org/TR/wai-aria-practices-1.1/" target="_blank">ARIA Authoring Practices<span class="visuallyhidden"> opens in a new window</span></a></p>
+		</section>
+
+		<section>
+			<h2>ARIA Core Components</h2>
+			<div class="inset-width">
+				<div class="definition">
+					<h4 style="margin-top: 0.75em">Roles</h4>
+					<p>What does this thing do?</p>
 <pre><code class="html xml">&lt;form role="search"&gt;</code></pre>
-						</div>
-						<div class="definition">
-							<h4 style="margin-top: 0.75em">States</h4>
-							<p>The current condition of this particular thing</p>
+				</div>
+				<div class="definition">
+					<h4 style="margin-top: 0.75em">States</h4>
+					<p>The current condition of this particular thing</p>
 <pre><code class="html xml">&lt;input aria-disabled="true"&gt;</code></pre>
-						</div>
-						<div class="definition">
-							<h4 style="margin-top: 0.75em">Properties</h4>
-							<p>The nature of the thing</p>
+				</div>
+				<div class="definition">
+					<h4 style="margin-top: 0.75em">Properties</h4>
+					<p>The nature of the thing</p>
 <pre><code class="html xml">&lt;input aria-required="true"&gt;</code></pre>
-						</div>
-					</div>
-				</section>
+				</div>
+			</div>
+		</section>
 
-				<section>
-					<h2>General Resources</h2>
-					<ul>
-						<li><a href="http://webaim.org/projects/screenreadersurvey7/" target="_blank" title="Link opens in a new window">WebAIM Screen Reader Survey<span class="visuallyhidden"> opens in a new window</span></a></li>
-						<li><a href="https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en" target="_blank" title="Link opens in a new window">Axe Chrome extension<span class="visuallyhidden"> opens in a new window</span></a>, a Chrome extension that does in-browser audits against several.</li>
-						<li><a href="https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en" target="_blank" title="Link opens in a new window">Chrome Accessibility Developer Tools<span class="visuallyhidden"> opens in a new window</span></a>, a Chrome extension that does in-browser audits and highlights ARIA properties.</li>
-						<li><a href="https://addons.mozilla.org/en-US/firefox/addon/web-developer/" target="_blank" title="Link opens in a new window">Web Developer toolbar<span class="visuallyhidden"> opens in a new window</span></a>, a Firefox extension with helpful tools</li>
-						<li><a href="http://a11yproject.com/" target="_blank">The Accessibility Project<span class="visuallyhidden"> opens in a new window</span></a></li>
-						<li><a href="http://www.w3.org/TR/aria-in-html/" target="_blank" title="Link opens in a new window">Using ARIA in HTML<span class="visuallyhidden"> opens in a new window</span></a>
-					</ul>
-				</section>
+		<section>
+			<h2>Resources</h2>
+			<ul>
+				<li><a href="http://webaim.org/projects/screenreadersurvey7/" target="_blank" title="Link opens in a new window">WebAIM Screen Reader Survey<span class="visuallyhidden"> opens in a new window</span></a></li>
+				<li><a href="https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en" target="_blank" title="Link opens in a new window">Axe Chrome extension<span class="visuallyhidden"> opens in a new window</span></a>, a Chrome extension that does in-browser audits against several.</li>
+				<li><a href="https://addons.mozilla.org/en-US/firefox/addon/web-developer/" target="_blank" title="Link opens in a new window">Web Developer toolbar<span class="visuallyhidden"> opens in a new window</span></a>, a Firefox extension with helpful tools</li>
+				<li><a href="http://a11yproject.com/" target="_blank">The Accessibility Project<span class="visuallyhidden"> opens in a new window</span></a></li>
+				<li><a href="http://www.w3.org/TR/aria-in-html/" target="_blank" title="Link opens in a new window">Using ARIA in HTML<span class="visuallyhidden"> opens in a new window</span></a></li>
+				<li><a href="https://css-tricks.com/aria-spackle-not-rebar/" target="_blank" title="Link opens in a new window">ARIA is Spackle, Not Rebar<span class="visuallyhidden"> opens in a new window</span></a></li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>How can I keep learning?</h2>
+			<ul>
+				<li>Come to the <a href="https://www.meetup.com/a11ychi/" target="_blank" title="Link opens in a new window">Chicago Digital Accessibility and Inclusive Design Meetup<span class="visuallyhidden"> opens in a new window</span></a></li>
+				<li>Follow cool people in the industry on social media.</li>
+				<li>Practice! Try designing and creating your own site from scratch.</li>
+				<li>Try the accessibility features on your phone or computer.</li>
+				<li>Listen to podcasts, such as <a href="https://a11yrules.com/" target="_blank" title="Link opens in a new window">a11y rules<span class="visuallyhidden"> opens in a new window</span></a></li>
+			</ul>
+		</section>
 
       </div>
       <footer>
