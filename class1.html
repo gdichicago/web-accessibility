@@ -8,7 +8,7 @@
 
     <meta name="description" content="This is the Girl Develop It Web Accessibility curriculum. It was originally developed by Sylvia Richardson and modified by Marcy Sutton.
 
-    This course is meant to be taught as a two-week class. The primary slides are designed for maximum presentability--one picture, one sentence. The vertical slides contain speaker notes, to make the slides more useful as a shared resource.
+    This course is meant to be taught as a two-part class. The primary slides are designed for maximum presentability--one picture, one sentence. The vertical slides contain speaker notes, to make the slides more useful as a shared resource.
 
     Each of the slides is customizable according to the needs of a given class or audience.  The GitHub repository contains an Instructor Guide, with further information about the course.">
     <meta name="author" content="Girl Develop It">
@@ -83,12 +83,12 @@
           </ul>
         </section>
 
-        <!-- Intro: What is Accessibility?-->
         <section>
           <h2>Who can use your sites?</h2>
           <img src="img/disabled-iphone.jpg" alt="Happy iPhone users"/>
           <p class="credit">Photo credit: <a href="http://www.deaftechnews.com/2012/04/17/see-how-blind-people-use-the-iphone-4s-video/" target="_blank" title="Link opens in a new window">DeafTech News<span class="visuallyhidden"> opens in a new window</span></a></p>
         </section>
+
         <section>
           <h2>What is accessibility?</h2>
           <ul>
@@ -103,6 +103,7 @@
           <img src="img/accessdogs.jpg" alt="Dogs outside door, captioned 'We R UR community, beggin fer access'"/>
           <p class="credit">Photo credit: <a href="http://www.flickr.com/photos/circulating/997909242/" target="_blank" title="Link opens in a new window">circulating<span class="visuallyhidden"> opens in a new window</span></a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/" target="_blank" title="Link opens in a new window">cc<span class="visuallyhidden"> opens in a new window</span></a></p>
         </section>
+
         <section>
           <h2>Why make your sites accessible?</h2>
           <ul>
@@ -127,6 +128,29 @@
               <li>16.1 million  have limitations in cognitive functioning or who have a mental or emotional illness.</li>
             </ul>
             <p>Legal issues: Some sites, like Target, have been sued under the Americans with Disabilities Act (ADA)</p>
+            <p>Section 504 is for students with disabilities</p>
+            <p>Section 508 is for federal agencies</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2>Web Content Accessibility<br>Guidelines (WCAG)</h2>
+          <ul>
+            <li>Main international standard for accessibility</li>
+            <li>Three levels: A, AA, AA (lowest to highest compliance</li>
+            <li>4 categories: Perceivable, Operable, Understandable, and Robust</li>
+          </ul>
+          <aside class="notes">
+            <p>The guidelines are not fixed or comprehensive. We will talk about some of the guidelines, although not directly. It is more important to learn about the principles behind the guidelines than memorize guidelines themselves.</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2>WCAG</h2>
+          <img src="img/WCAG.png" alt="screen shot of WCAG guidelines"/>
+          <p>Screen shot of <a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1 spec<span class="visuallyhidden"> opens in a new window</span></a></p>
+          <aside class="notes">
+            Here is a screen shot of the WCAG 2.1 guidelines. 
           </aside>
         </section>
 
@@ -138,6 +162,12 @@
             <p>Ask if people recognize curb cut, then point out that while wheelchairs use them, so do strollers, people with luggage, etc.  Mention how accessibility can help the non-disabled as well.</p>
           </aside>
         </section>
+
+        <section>
+            <h2>Disability is a mismatch between an individual and their environment</h2>
+            <p>Social model of disability</p>
+        </section>
+
         <section>
           <h2>Benefits of Accessibility</h2>
           <ul>
@@ -155,6 +185,7 @@
             <p>This is a good place to pause and ask students to come up with potential types of disability that can affect web use.</p>
           </aside>
         </section>
+
         <section>
           <h2>Types of Disability</h2>
           <ul>
@@ -165,7 +196,12 @@
           </ul>
         </section>
 
-        <!-- How To-->
+        <section>
+          <h2>Temporary Disabilities</h2>
+          <img src="img/disabilities.png" alt="Cartoon of showing temporary and situational disabilities for each category"/>
+          <p class="credit"><a href="https://www.microsoft.com/design/inclusive/" target ="_blank">Microsoft Inclusive Design Toolkit<span class="visuallyhidden"> opens in a new window</span></a></p>
+        </section>
+
         <section>
           <h2>Accessibility is a process, not a checkbox</h2>
           <img src="img/checkmark.jpg" alt="Checkmark with word 'chk' on blackboard"/>
@@ -183,13 +219,15 @@
           <img src="img/canes.jpg" alt="Blind pedestrians with white canes"/>
           <p class="credit">Photo credit: <a href="http://www.flickr.com/photos/brailleinstitute/5169573221/" target ="_blank">Braille Institute<span class="visuallyhidden"> opens in a new window</span></a> <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/" target ="_blank">cc<span class="visuallyhidden"> opens in a new window</span></a></p>
         </section>
+
         <section>
-          <h2>What assitive technology do people use?</h2>
+          <h2>What assistive technologies do <br> people use?</h2>
           <ul>
+            <li>Screen readers</li>
             <li>Browser zoom</li>
             <li>Screen magnification</li>
+            <li>Refreshable braille display</li>
             <li>High contrast displays</li>
-            <li>Screen readers</li>
           </ul>
           <aside class="notes">Important points:
             <ul>
@@ -199,8 +237,9 @@
             </ul>
           </aside>
         </section>
+
         <section>
-          <h2>Demo</h2>
+          <h2>Demo: screen reader</h2>
           <aside class="notes">
             <p>Choose a site with a complex nav menu, and show how long it takes to get through with a screen reader. I used CNN.com and NVDA for this demo, but any common screen reader will work.</p>
           </aside>
@@ -221,7 +260,6 @@
           <h2>Alt text</h2>
           <ul>
             <li class="fragment">Alternate text describes pictorial content in words.</li>
-            <li class="fragment">Pay attention to context.</li>
             <li class="fragment">Describe the <em>function</em>, not the content.</li>
             <li class="fragment">If an image is purely decorative, use <code>alt=""</code> to instruct a screen reader to skip it.</li>
             <li class="fragment">Instead of using "longdesc," provide a caption or link. Consider HTML5 <code>figure</code> and <code>figcaption</code>.</li>
@@ -234,23 +272,26 @@
 &lt;/figure&gt;
 </code></pre>
         </section>
+
         <section>
           <h2>Let's try it</h2>
-          <p>Provide alt text for the images on your handout.</p>
+          <p>What alt text would you give this image?</p>
+          <img src="img/dogwithspaghetti.jpg" alt="dog with spaghetti on its head">
           <aside class="notes">
-            <p>Print handouts in advance! They are in the repo as kitten-alt-text.pdf</p>
+            <p>Optional - use the handout. They are in the repo as kitten-alt-text.pdf</p>
           </aside>
         </section>
+
         <section>
           <h2>Other tips for screen readers</h2>
           <ul>
             <li class="fragment">Content is more than just visual.</li>
-            <li class="fragment">Headings skip-nav links and landmark roles can users navigate a page.</li>
+            <li class="fragment">Skip to navigation links and landmark roles can users navigate a page.</li>
             <li class="fragment">External link indicators help prevent unexpected page changes.</li>
             <li class="fragment">Tables can be hard to navigate, so use them for tabular data, not for layout.</li>
-            <li class="fragment">Many users are using mobile screen readers such as <a href="http://www.apple.com/accessibility/iphone/vision.html" target="_blank" title="Link opens in a new window">VoiceOver on iOS<span class="visuallyhidden"> opens in a new window</span></a>.</li>
           </ul>
         </section>
+
         <section>
           <h2>Example of skip navigation</h2>
           <img src="img/fb_skip_nav.png" alt="screenshot of Facebook skip to main content options"/>
@@ -262,47 +303,62 @@
           <img src="img/contrast.jpg" alt="Crosswalk with contrasting colors"/>
           <p class="credit">Photo credit: <a href="http://www.flickr.com/photos/antifluor/2074560932/" target="_blank" title="Link opens in a new window">antifluor<span class="visuallyhidden"> opens in a new window</span></a> <a href="http://creativecommons.org/licenses/by/2.0/" target="_blank" title="Link opens in a new window">cc<span class="visuallyhidden"> opens in a new window</span></a></p>
         </section>
+
         <section>
           <h2>More on visual disabilities</h2>
           <ul>
             <li class="fragment">If you use color to indicate something, also use another indicator. For example, underline links on hover or mark a required field with an asterisk.</li>
             <li class="fragment">Red/green color blindness is the most common, so avoid green next to red.</li>
             <li class="fragment">Include color names in product descriptions and show examples (<a href="http://24ways.org/2012/colour-accessibility/" target="_blank" title="Link opens in a new window">article<span class="visuallyhidden"> opens in a new window</span></a>)</li>
-            <li class="fragment">Have a <em>minimum</em> of contrast ratio of 4.5:1 for normal text and 3:1 for large text. (<a href="http://webaim.org/resources/contrastchecker/" target="_blank" title="Link opens in a new window">Checker<span class="visuallyhidden"> opens in a new window</span></a>)</li>
-            <li class="fragment">Try zooming in on your designs, to see how they look when enlarged. It is a good idea to use ems and percentages instead of pixels when you can.</li>
-          </ul>
+            <li class="fragment">Have a <em>minimum</em> contrast ratio of 4.5:1 for normal text and 3:1 for large text. (<a href="http://webaim.org/resources/contrastchecker/" target="_blank" title="Link opens in a new window">Checker<span class="visuallyhidden"> opens in a new window</span></a>)</li>
+            <li class="fragment">A user should be able to resize the page to 200%.</li>
         </section>
 
         <section>
-          <h2>Color Contrast Checkers</h2>
-          <p>Let's see if our slides are accessible</p>
+          <h2>Let's try it</h2>
+          <h3>Color Contrast Checkers</h3>
+          <p>Let's see if our slides are accessible by putting these color values into <a href="http://webaim.org/resources/contrastchecker/" target="_blank" title="Link opens in a new window">WebAIM's contrast checker<span class="visuallyhidden"> opens in a new window</span></a></p>
           <p>
-            Heading font color (pink): #FF5E99
-            Text font color (gray): #53555C
+            Pink Heading font color: #f05b62 <br>
+            Gray Text font color: #53555C
           </p>
+        </section>
+
+        <section>
+          <h2>Let's try it</h2>
+          <h2>Page Resizing</h2>
+          <ul>
+            <li>Pick a page and try zooming in to 200%.</li>
+            <li>Can you still use the page?</li>
+            <li>You shouldn't have to scroll horizontally.</li>
+            <li>Use ems and percentages instead of pixels when you can.</li>
+            <li>Responsive design helps!</li>
+          </ul>
         </section>
 
         <!-- Hearing disabilities-->
         <section>
-          <h3>Provide good captions</h3>
+          <h2>Provide good alternative text</h2>
           <img src="img/in_ur_reality.png" alt="Stick figure attaching captions to cats. Dialog- Man: Oh hi; I'm here from the internet; Man 2: What are you doing!?; Man: Gluing captions to your cats."/>
           <p class="credit">Credit: <a href="http://xkcd.com/262/" target="_blank" title="Link opens in a new window">Randall Munroe<span class="visuallyhidden"> opens in a new window</span></a> <a href="http://creativecommons.org/licenses/by-nc/2.5/" target="_blank" title="Link opens in a new window">cc<span class="visuallyhidden"> opens in a new window</span></a></p>
         </section>
+
         <section>
-          <h3>No, automatic captions don't count</h3>
-          <img src="img/bad-captions.png" alt="YouTube video with nonsense captions: Look at your help literally now you can link your data from hell"/>
+          <h2>No, automatic captions don't count</h2>
+          <img src="img/bad-captions.png" alt="YouTube video with nonsense auto captions: Look at your help literally now you can link your data from hell"/>
           <p class="credit">Credit: Sylvia Pellicore, from YouTube</p>
           <aside class="notes">
             <p>The original audio in that clip was "link your data from <strong>health</strong> care apps"</p>
           </aside>
         </section>
+
         <section>
-          <h3>Hearing Disabilities</h3>
+          <h2>Hearing Disabilities</h2>
           <ul>
             <li class="fragment">Most deaf or hard-of-hearing people have limited difficulty with web accessibility.</li>
             <li class="fragment">Provide captions or transcripts for multimedia elements.</li>
             <li class="fragment">Don't rely on sounds to convey information, like an "alert" noise. Even hearing users often have their computers muted.</li>
-            <li class="fragment"><a href="https://digiday.com/media/silent-world-facebook-video/" target="_blank" title="Link opens in a new window">Article about how 85% of Facebook video is watched without sound<span class="visuallyhidden"> opens in a new window</span></a></p></li>
+            <li class="fragment"><a href="https://digiday.com/media/silent-world-facebook-video/" target="_blank" title="Link opens in a new window">85% of Facebook video is watched without sound<span class="visuallyhidden"> opens in a new window</span></a></p></li>
           </ul>
           <aside class="notes">
             <p>Paid captioning services are relatively inexpensive, about $1.50 to $2.50 a minute.</p>
@@ -311,22 +367,30 @@
 
         <!-- Physical disabilities-->
         <section>
-          <h3>Lose the Mouse</h3>
+          <h2>Lose the Mouse</h2>
           <img src="img/mouse.jpg" alt="Cat steals mouse" />
           <p class="credit">Photo credit: <a href="http://ipkitten.blogspot.com/2013/07/the-patent-legacy-of-computer-mouse.html" target="_blank" title="Link opens in a new window">The IP Kat<span class="visuallyhidden"> opens in a new window</span></a></p>
         </section>
+
         <section>
           <h2>Demo</h2>
+          <p>The mouse isn't the only way to interact with the web.</p>
+          <ul>
+            <li>Some users only use the keyboard.</li>
+            <li><a href="https://www.youtube.com/watch?v=1AfbGQ2DYjg" target="_blank" title="Link opens in a new window">Switch Control demo<span class="visuallyhidden"> opens in a new window</span></a> </li>
+            <li><a href="https://www.youtube.com/watch?v=4_e_0fI7i3A" target="_blank" title="Link opens in a new window">Sip and Puff demo<span class="visuallyhidden"> opens in a new window</span></a></li>
+          </ul>
           <aside class="notes">
             <p><a href="https://www.youtube.com/watch?v=p83wLuq3USA" target="_blank">YouTube video on eye-tracking software</a></p>
             <p><a href="http://codecanyon.net/item/subscribe-popup/full_screen_preview/2421232">Popup sign up</a></p>
           </aside>
         </section>
+
         <section>
-          <h3>Physical Disabilities</h3>
+          <h2>Physical Disabilities</h2>
           <ul>
             <li class="fragment">Using a mouse typically requires fine motor skills.</li>
-            <li class="fragment">Many users with limited mobility have difficulty using a mouse, so they might interact with the screen using the keyboard.</li>
+            <li class="fragment">Many users with physical disabilities use the keyboard or other alternative input methods.</li>
             <li class="fragment">Make clickable elements large, and put space between them.</li>
             <li class="fragment">Avoid clickable page elements that move.</li>
             <li class="fragment">Animations with rapid flickers are not only annoying, they can trigger epileptic seizures.</li>
@@ -336,38 +400,41 @@
 
         <!-- Cognitive disabilities-->
         <section>
-          <h3>Don't overwhelm</h3>
+          <h2>Don't overwhelm</h2>
           <img src="img/toomanysigns.jpg" alt="Sign post with multiple signs"/>
           <p class="credit">Photo credit: <a href="http://www.flickr.com/photos/thomashawk/2402598275/" target="_blank" title="Link opens in a new window">Thomas Hawk<span class="visuallyhidden"> opens in a new window</span></a> <a href="http://creativecommons.org/licenses/by-nc/2.0/" target="_blank" title="Link opens in a new window">cc<span class="visuallyhidden"> opens in a new window</span></a></p>
         </section>
+
         <section>
-          <h3>Provide plenty of time</h3>
+          <h2>Provide plenty of time</h2>
           <img src="img/clock.jpg" alt="Alarm clock"/>
           <p class="credit">Photo credit: <a href="http://www.flickr.com/photos/beth19/4721798240/" target="_blank" title="Link opens in a new window">Bethan<span class="visuallyhidden"> opens in a new window</span></a> <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/" target="_blank" title="Link opens in a new window">cc<span class="visuallyhidden"> opens in a new window</span></a></p>
         </section>
+
         <section>
-          <h3>CAPTCHAs don't just catch robots</h3>
+          <h2>CAPTCHAs don't just catch robots</h2>
           <img src="img/confusedrobot.jpg" alt="Confused robot"/>
           <p class="credit">Photo credit: <a href="http://www.flickr.com/photos/baboon/3946055/" target="_blank" title="Link opens in a new window">baboon<span class="visuallyhidden"> opens in a new window</span></a> <a href="http://creativecommons.org/licenses/by-nc/2.0/" target="_blank" title="Link opens in a new window">cc<span class="visuallyhidden"> opens in a new window</span></a></p>
         </section>
+
         <section>
-          <h3>Dealing with cognitive disabilities</h3>
+          <h2>Dealing with cognitive disabilities</h2>
           <ul>
-            <li class="fragment">This is a less-researched area of web accessibility. Here is a <a href="http://jkg3.com/Journal/cognitive-accessibility-101-part-1-what-is-cognitive-accessibility">Cognitive 101</a>.</li>
+            <li class="fragment">These users might have difficulties with learning, problem solving, comprehension, memory, or attention.</li>
             <li class="fragment">Minimize cognitive load--don't overwhelm the user.</li>
             <li class="fragment">Use common icons to mark important tasks and consider text labels.</li>
             <li class="fragment">If you have timed content (forms, image galleries, etc.) provide controls or allow users to extend time.</li>
             <li class="fragment">CAPTCHAs aren't blind-friendly, are very difficult for users with learning disabilities like dyslexia, and annoy everyone. Consider <a href="http://webaim.org/blog/spam_free_accessible_forms/" target="_blank" title="Link opens in a new window">an alternative method<span class="visuallyhidden"> opens in a new window</span></a>.</li>
+           <li class="fragment"> Here is a <a href="http://jkg3.com/Journal/cognitive-accessibility-101-part-1-what-is-cognitive-accessibility">Cognitive 101</a>.</li>
           </ul>
           <img class="fragment" src="img/captcha.png" alt="Screenshot of a Captcha" />
         </section>
 
-        <!-- Class exercise -->
         <section>
           <h2>Let's try it</h2>
           <p>Visit a site you use frequently. Identify one accessibility feature that is part of the site and one feature you would change.</p>
           <aside class="notes">
-            <p>Students can do this activity alone or in pairs, depending on the size of the class.  If people get stuck, recommend:</p>
+            <p>Students can do this activity alone or in pairs, depending on the size of the class. If people get stuck, recommend:</p>
             <ul>
               <li>http://www.buzzfeed.com/</li>
               <li>http://www.ebay.com/</li>
@@ -377,17 +444,17 @@
           </aside>
         </section>
 
-        <!-- Final slides-->
         <section>
-          <h3>Show your users some love!</h3>
+          <h2>Show your users some love!</h2>
           <img src="img/handicappedlove.jpg" alt="Disabled parking symbol with a heart" />
           <p class="credit">Photo credit: <a href="http://www.flickr.com/photos/samfelder/115576714/" target="_blank" title="Link opens in a new window">Sam Felder<span class="visuallyhidden"> opens in a new window</span></a> <a href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank" title="Link opens in a new window">cc<span class="visuallyhidden"> opens in a new window</span></a></p>
         </section>
 
         <section>
-          <h3>Resources</h3>
+          <h2>Resources</h2>
           <ul>
             <li><a href="http://webaim.org/resources/designers/" target="_blank" title="Link opens in a new window">Web Accessibility for Designers<span class="visuallyhidden"> opens in a new window</span></a></li>
+            <li><a href="https://uxdesign.cc/designing-for-accessibility-is-not-that-hard-c04cc4779d94" target="_blank" title="Link opens in a new window">Designing for accessibility is not that hard<span class="visuallyhidden"> opens in a new window</span></a></li>
             <li><a href="http://webaim.org/" target="_blank" title="Link opens in a new window">WebAIM (Web Accessibility in Mind)<span class="visuallyhidden"> opens in a new window</span></a></li>
             <li><a href="http://www.globalaccessibilityawarenessday.org/" target="_blank" title="Link opens in a new window">Global Accessibility Awareness Day<span class="visuallyhidden"> opens in a new window</span></a></li>
             <li><a href="http://a11ywins.tumblr.com" target="_blank" title="Link opens in a new window">Accessibility Wins<span class="visuallyhidden"> opens in a new window</span></a></li>
@@ -395,7 +462,6 @@
             <li><a href="http://www.w3.org/WAI/" target="_blank" title="Link opens in a new window">W3C Web Accessibility Initiative (WAI)<span class="visuallyhidden"> opens in a new window</span></a></li>
           </ul>
         </section>
-
 
       </div>
       <footer>
@@ -405,7 +471,6 @@
         </div>
       </footer>
     </div>
-
 
     <script src="lib/js/head.min.js"></script>
     <script src="js/reveal.min.js"></script>
